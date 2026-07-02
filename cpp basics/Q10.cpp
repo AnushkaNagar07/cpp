@@ -8,9 +8,8 @@ int main(){
     int n;
     cout<<"Enter a number:";
     cin>>n;
-    char ch;
+    char ch='A';
     for (int i=1; i<=n;i++){
-        ch= 'A';
         for (int j=(1+(n*(i-1))); j<=(n*i); j++){
             cout<<ch <<" ";
             ch=ch+1;

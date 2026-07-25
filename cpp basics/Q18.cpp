@@ -9,14 +9,13 @@ int main (){
     int n;
     cout<<"Enter a number:";
     cin>>n;
-    char ch='A';
+    
     for (int i=1; i<=n; i++){
-        
-        for (int j=i; j>=1; j--){
-            cout<<ch<<" ";
+        char ch= 'D';
+        for (int j=1; j<=i; j++){
+            cout<<(char)(ch-(j+2));
             ch=ch-1;
         }
-        
         cout<<endl;
     }
 }

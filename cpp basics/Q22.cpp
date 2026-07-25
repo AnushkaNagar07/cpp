@@ -1,0 +1,30 @@
+//      1
+//    1 2 1
+//   1 2 3 2 1
+// 1 2 3 4 3 2 1
+
+#include <iostream>
+using namespace std;
+int main(){
+    int n;
+    cout<<"Enter a number:";
+    cin>>n;
+    for (int i=1; i<=n; i++){
+        // spaces
+        for (int space=1; space<=(n-i); space++){
+            cout<<"  ";
+        }
+        // nums1
+        for (int j=1; j<=i;j++){
+            cout<<j<<" ";
+        }
+        // nums2
+        for (int j=(i-1); j>=1; j--){
+            cout<<j<<" ";
+        }
+
+        cout<<endl;
+        
+    }
+    
+}

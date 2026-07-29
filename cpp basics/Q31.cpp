@@ -2,15 +2,18 @@
 
 # include <iostream>
 using namespace std;
-int main(){
-    int arr[]={4,2,7,8,1,2,5};
-    int key= 8;
-    for (int i=0; i< (sizeof(arr)/sizeof(int));i++){
-        if (arr[i]==key){
-            cout<<"Index of the required element is "<<i<<endl;
-            break;
+int search(int ar[],int k){
+    for (int i=0; i<7 ;i++){
+        if (ar[i]==k){
+            return i;
         }
         
     }
-    return 0;
+    return -1;
+}
+
+int main(){  
+    int arr[]={4,2,7,8,1,2,5};
+    int key= 5;
+    cout<< search (arr,key)<<endl;
 }

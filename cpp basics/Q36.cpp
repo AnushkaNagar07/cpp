@@ -1,0 +1,1 @@
+// WAF to print intersection of 2 arrays. (print the common elements in 2 arrays)
